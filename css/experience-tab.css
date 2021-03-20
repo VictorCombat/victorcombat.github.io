@@ -1,0 +1,14 @@
+.experience-header {
+    /* background-color: forestgreen; */
+
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    align-items: center;
+    text-align: center;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 0 2%;
+}
