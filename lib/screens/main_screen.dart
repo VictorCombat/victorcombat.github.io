@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
+import 'components/side_bar.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -10,14 +11,12 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          constraints: BoxConstraints(maxWidth: maxWidth),
+          constraints: BoxConstraints(maxWidth: maxWidth, maxHeight: maxHeight),
           child: Row(
             children: [
               Expanded(
                 flex: 2,
-                child: Container(
-                  color: Colors.green,
-                ),
+                child: SideBar(),
               ),
               Expanded(
                   flex: 7,
