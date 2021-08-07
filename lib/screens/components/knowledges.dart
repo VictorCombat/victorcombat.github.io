@@ -48,7 +48,10 @@ class KnowledgeText extends StatelessWidget {
           SizedBox(
             width: defaultPadding / 2,
           ),
-          Text(text),
+          Text(
+            text,
+            overflow: TextOverflow.ellipsis,
+          ),
         ],
       ),
     );
