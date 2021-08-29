@@ -1,14 +1,26 @@
+import 'dart:html';
+
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:web_portfolio/models/Project.dart';
+import 'package:web_portfolio/models/SelectedProjectModel.dart';
 import 'package:web_portfolio/responsive.dart';
+import 'package:web_portfolio/screens/home/components/project_details.dart';
 
 import '../constants.dart';
 import 'components/side_bar.dart';
 
-class MainScreen extends StatelessWidget {
+class MainScreen extends StatefulWidget {
   const MainScreen({Key? key, required this.children}) : super(key: key);
 
   final List<Widget> children;
 
+  @override
+  _MainScreenState createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,23 +53,25 @@ class MainScreen extends StatelessWidget {
               Expanded(
                 flex: 7,
                 child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      ...children,
-                      // Place footer here
-                    ],
+                  child: ChangeNotifierProvider(
+                    create: (context) => SelectedProjectModel(),
+                    child: Consumer<SelectedProjectModel>(
+                      builder: (context, selectedProject, child) {
+                        if (selectedProject.getSelectedProject() != null) {
+                          return ProjectDetailsScreen(
+                              selectedProject: selectedProject);
+                        } else {
+                          return Column(
+                            children: [
+                              ...widget.children,
+                              // Place footer here
+                            ],
+                          );
+                        }
+                      },
+                    ),
                   ),
                 ),
-                // Padding(
-                //   padding: const EdgeInsets.only(left: defaultPadding),
-                //   child: Responsive(
-                //     mobile: ProjectsGridView(
-                //         crossAxisCount: 1, childAspectRatio: 1.7),
-                //     mobileLarge: ProjectsGridView(crossAxisCount: 2),
-                //     tablet: ProjectsGridView(childAspectRatio: 1.1),
-                //     desktop: ProjectsGridView(),
-                //   ),
-                // ),
               ),
             ],
           ),

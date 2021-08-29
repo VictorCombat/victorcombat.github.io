@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:web_portfolio/models/Project.dart';
+import 'package:web_portfolio/models/SelectedProjectModel.dart';
 import 'package:web_portfolio/responsive.dart';
 
 import '../../../constants.dart';
@@ -8,8 +10,10 @@ class ProjectCard extends StatelessWidget {
   const ProjectCard({
     Key? key,
     required this.project,
+    required this.id,
   }) : super(key: key);
 
+  final int id;
   final Project project;
 
   @override
@@ -24,18 +28,22 @@ class ProjectCard extends StatelessWidget {
             project.title!,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: Theme.of(context).textTheme.subtitle2,
+            style:
+                Theme.of(context).textTheme.subtitle2!.copyWith(fontSize: 20.0),
           ),
           Spacer(),
           Text(
-            project.description!,
+            project.shortDescription!,
             maxLines: Responsive.isMobileLarge(context) ? 3 : 4,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(height: 1.5),
+            style: TextStyle(height: 1.5, fontSize: 18.0),
           ),
           Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Provider.of<SelectedProjectModel>(context, listen: false)
+                  .selectProject(project);
+            },
             child: Text(
               "Read More >>",
               style: TextStyle(

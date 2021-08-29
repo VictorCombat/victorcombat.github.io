@@ -23,7 +23,7 @@ class MyProjects extends StatelessWidget {
         const SizedBox(height: defaultPadding),
         Text(
           "My Projects",
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.headline5,
         ),
         const SizedBox(height: defaultPadding),
         Responsive(
@@ -60,6 +60,7 @@ class ProjectsGridView extends StatelessWidget {
         mainAxisSpacing: defaultPadding,
       ),
       itemBuilder: (context, index) => ProjectCard(
+        id: index,
         project: projects[index],
       ),
     );
