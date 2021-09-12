@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class MyInfo extends StatelessWidget {
   const MyInfo({
@@ -18,7 +19,9 @@ class MyInfo extends StatelessWidget {
             ),
             CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage("images/photo_victor_1000x1000.jpg"),
+              backgroundImage:
+                  //AssetImage("images/photo_victor_1000x1000.jpg"),
+                  AssetImage('images/photo_victor_1000x1000.jpg'),
             ),
             Spacer(),
             Text(

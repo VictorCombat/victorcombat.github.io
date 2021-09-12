@@ -19,7 +19,7 @@ class HomeBanner extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            "banners/animated-mesh-neon.gif",
+            "images/home-banners/animated-mesh-neon.gif",
             fit: BoxFit.cover,
           ),
           Container(color: darkColor.withOpacity(0.66)),

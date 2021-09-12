@@ -50,8 +50,14 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - ./assets/icons/
-    - ./assets/
+    - assets/icons/
+    - assets/images/
+    - assets/images/home-banners/
+    - assets/images/bg-subtraction-region-growing/
+    - assets/images/cryptotrack/
+    - assets/images/orbital-defense/
+    - assets/images/pac-man/
+    - assets/images/pom-vcity/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
