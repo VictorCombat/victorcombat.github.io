@@ -22,9 +22,11 @@ class TextProjectSection extends ProjectSection {
 }
 
 class Gallery extends ProjectSection {
+  double? viewportFraction = 0.8;
   final List<String>? imagesURLs;
 
-  Gallery({String? title, this.imagesURLs}) : super(title: title);
+  Gallery({String? title, this.viewportFraction = 0.8, this.imagesURLs})
+      : super(title: title);
 }
 
 List<Project> projects = [
@@ -49,6 +51,7 @@ List<Project> projects = [
               "Moreover, the data being very large, we also had to reuse, isolate and improve CityGML data cutting and splitting modules."),
       Gallery(
         title: "Gallery",
+        viewportFraction: 0.8,
         imagesURLs: [
           "images/pom-vcity/lyon_1er_hdv_terreaux_musee_beaux_arts.png",
           "images/pom-vcity/lyon_1er_opera.png",
@@ -79,6 +82,7 @@ List<Project> projects = [
               "   -- create/edit/delete levels"),
       Gallery(
         title: "Gallery",
+        viewportFraction: 0.8,
         imagesURLs: [
           "images/pac-man/pac-man-01.PNG",
           "images/pac-man/pac-man-02.PNG",
@@ -114,6 +118,7 @@ List<Project> projects = [
               "   -- Cryptocurrencies sorting"),
       Gallery(
         title: "Gallery",
+        viewportFraction: 0.35,
         imagesURLs: [
           "images/cryptotrack/cryptotrack-home-page-top.jpg",
           "images/cryptotrack/cryptotrack-home-page-bottom.jpg",
@@ -133,18 +138,64 @@ List<Project> projects = [
   ),
   Project(
     title: "Background subtraction & Region Growing",
-    shortDescription: "Description project 004",
-    bannerURL: "/assets/images/unknown.jpg",
+    shortDescription:
+        "Introduction to OpenCV, background subtraction & region growing algorithm.",
+    bannerURL: "images/bg-subtraction-region-growing/rg-auto-02.jpg",
     sections: [
-      TextProjectSection(title: "About", text: "A loooooooong description"),
+      TextProjectSection(
+          title: "About",
+          text: "As part of the Image analysis course of the Master 1 Computer Science at the University Claude Bernard Lyon 1, we had a project whose objective is to put into practice methods and algorithms of analysis and image processing seen in course." +
+              "This project has been realized with the Python version of the OpenCV graphic library specialized in real time image processing.\n" +
+              "This report contains the three-part structure of the project." +
+              "In the first part, we had to get to know OpenCV with basic processing on images, the second part consisted in extracting the silhouette of a person on a video, and finally we had to implement the region growing algorithm in a third part."),
+      TextProjectSection(
+          title: "Main Features",
+          text: "The main features of the project are :\n" +
+              "   -- Step 1 : Getting Started with OpenCV using some common filters\n" +
+              "   -- Step 2 : Background Subtraction\n" +
+              "   -- Step 3 : Implementing Region Growing algorithm on image\n" +
+              "   -- Step 3 bis : Implementing Region Growing algorithm on a video frame using an envelope to reduce the search area and using a grid to place seeds"),
+      Gallery(
+        title: "Gallery",
+        viewportFraction: 0.7,
+        imagesURLs: [
+          "images/bg-subtraction-region-growing/bg-subtraction-01.PNG",
+          "images/bg-subtraction-region-growing/bg-subtraction-02.PNG",
+          "images/bg-subtraction-region-growing/rg-01.jpg",
+          "images/bg-subtraction-region-growing/rg-02.jpg",
+          "images/bg-subtraction-region-growing/rg-auto-01.jpg",
+          "images/bg-subtraction-region-growing/rg-auto-02.jpg",
+        ],
+      ),
     ],
   ),
   Project(
     title: "Orbital Defense",
-    shortDescription: "Description project 005",
-    bannerURL: "/assets/images/unknown.jpg",
+    shortDescription: "Infinite-shooter arcade style game made with Unity.",
+    bannerURL: "images/orbital-defense/orbital-defense-banner.jpg",
     sections: [
-      TextProjectSection(title: "About", text: "A loooooooong description"),
+      TextProjectSection(
+          title: "About",
+          text: "As I was learning Unity by my own, I wanted to challenge myself to make a game in a week to see what I could do.\n" +
+              "The design and development of Orbital Defense was born from this challenge."),
+      TextProjectSection(
+          title: "Main Features",
+          text: "The main features of the game are :\n" +
+              "   -- Shoot & destroy enemies to score\n" +
+              "   -- Pick up some power-ups\n" +
+              "   -- Different enemies archetypes\n" +
+              "   -- Bloom effect\n" +
+              "   -- Camera shaking effect & particles spawning when destroying enemies"),
+      Gallery(
+        title: "Gallery",
+        viewportFraction: 0.45,
+        imagesURLs: [
+          "images/orbital-defense/orbital-defense-home-screen.jpg",
+          "images/orbital-defense/orbital-defense-ingame-01.jpg",
+          "images/orbital-defense/orbital-defense-ingame-02.jpg",
+          "images/orbital-defense/orbital-defense-gameover-screen.jpg",
+        ],
+      ),
     ],
   ),
 ];

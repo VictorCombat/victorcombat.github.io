@@ -145,7 +145,7 @@ class ProjectDetailsScreen extends StatelessWidget {
                             );
                           }).toList(),
                           options: CarouselOptions(
-                            viewportFraction: 0.8,
+                            viewportFraction: gallery.viewportFraction!,
                             enableInfiniteScroll: true,
                             enlargeCenterPage: true,
                           ),
