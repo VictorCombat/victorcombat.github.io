@@ -137,7 +137,7 @@ class ProjectDetailsScreen extends StatelessWidget {
                           items: gallery.imagesURLs!.map((i) {
                             return Builder(
                               builder: (BuildContext context) {
-                                return Image.asset(
+                                return Image.network(
                                   i,
                                   fit: BoxFit.contain,
                                 );
