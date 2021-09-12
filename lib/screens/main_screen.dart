@@ -1,9 +1,5 @@
-import 'dart:html';
-
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:web_portfolio/models/Project.dart';
 import 'package:web_portfolio/models/SelectedProjectModel.dart';
 import 'package:web_portfolio/responsive.dart';
 import 'package:web_portfolio/screens/home/components/project_details.dart';
@@ -73,6 +69,7 @@ class _MainScreenState extends State<MainScreen> {
                   ),
                 ),
               ),
+              SizedBox(width: defaultPadding),
             ],
           ),
         ),

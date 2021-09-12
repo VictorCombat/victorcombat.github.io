@@ -43,29 +43,41 @@ class Skills extends StatelessWidget {
             Expanded(
               child: AnimatedCircularProgressIndicator(
                 percentage: 0.77,
-                label: "Flutter",
+                label: "OpenCV",
               ),
             ),
           ],
         ),
         SizedBox(
-          height: defaultPadding,
+          height: defaultPadding / 2,
         ),
         Divider(),
         SizedBox(
-          height: defaultPadding,
+          height: defaultPadding / 2,
         ),
         AnimatedLinearProgressIndicator(
           percentage: 0.81,
           label: "Git",
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.73,
-          label: "C#",
+          percentage: 0.72,
+          label: "OpenGL",
+        ),
+        AnimatedLinearProgressIndicator(
+          percentage: 0.70,
+          label: "Qt",
         ),
         AnimatedLinearProgressIndicator(
           percentage: 0.77,
-          label: "OpenCV",
+          label: "Flutter",
+        ),
+        AnimatedLinearProgressIndicator(
+          percentage: 0.75,
+          label: "Python 3",
+        ),
+        AnimatedLinearProgressIndicator(
+          percentage: 0.73,
+          label: "C#",
         ),
         AnimatedLinearProgressIndicator(
           percentage: 0.71,

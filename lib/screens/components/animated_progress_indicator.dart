@@ -64,7 +64,7 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: defaultPadding / 1.2),
+      padding: const EdgeInsets.only(bottom: defaultPadding / 1.3),
       child: TweenAnimationBuilder(
         tween: Tween<double>(begin: 0, end: percentage),
         duration: defaultDuration,
@@ -81,7 +81,7 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: defaultPadding / 1.5,
+              height: defaultPadding / 1.7,
             ),
             LinearProgressIndicator(
               value: value,
