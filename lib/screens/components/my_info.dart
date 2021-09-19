@@ -21,8 +21,7 @@ class MyInfo extends StatelessWidget {
               radius: 50,
               backgroundImage:
                   //AssetImage("images/photo_victor_1000x1000.jpg"),
-                  NetworkImage(
-                      "https://github.com/VictorCombat/victorcombat.github.io/blob/flutter-one-deploy/assets/images/photo_victor_1000x1000.jpg"),
+                  NetworkImage("assets/images/photo_victor_1000x1000.jpg"),
               //AssetImage('images/photo_victor_1000x1000.jpg'),
             ),
             Spacer(),
