@@ -67,7 +67,7 @@ List<Project> projects = [
   Project(
     title: "Pac-Man",
     shortDescription: "Replica of the famous Pac-Man game with a level editor.",
-    bannerURL: "images/pac-man/pac-man-banner.PNG",
+    bannerURL: "images/pac-man/pac-man-banner.png",
     sections: [
       TextProjectSection(
           title: "About",
@@ -84,10 +84,10 @@ List<Project> projects = [
         title: "Gallery",
         viewportFraction: 0.8,
         imagesURLs: [
-          "assets/images/pac-man/pac-man-01.PNG",
-          "assets/images/pac-man/pac-man-02.PNG",
-          "assets/images/pac-man/pac-man-03.PNG",
-          "assets/images/pac-man/pac-man-04.PNG",
+          "assets/images/pac-man/pac-man-01.png",
+          "assets/images/pac-man/pac-man-02.png",
+          "assets/images/pac-man/pac-man-03.png",
+          "assets/images/pac-man/pac-man-04.png",
         ],
       ),
     ],
@@ -159,8 +159,8 @@ List<Project> projects = [
         title: "Gallery",
         viewportFraction: 0.7,
         imagesURLs: [
-          "assets/images/bg-subtraction-region-growing/bg-subtraction-01.PNG",
-          "assets/images/bg-subtraction-region-growing/bg-subtraction-02.PNG",
+          "assets/images/bg-subtraction-region-growing/bg-subtraction-01.png",
+          "assets/images/bg-subtraction-region-growing/bg-subtraction-02.png",
           "assets/images/bg-subtraction-region-growing/rg-01.jpg",
           "assets/images/bg-subtraction-region-growing/rg-02.jpg",
           "assets/images/bg-subtraction-region-growing/rg-auto-01.jpg",
