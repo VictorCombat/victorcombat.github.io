@@ -50,9 +50,7 @@ class HomeBanner extends StatelessWidget {
                   const SizedBox(height: defaultPadding),
                 ElevatedButton(
                   onPressed: () {
-                    html.window.open(
-                        'https://drive.google.com/file/d/13ZhkzzOq_nnk60onhC9ZedNe4aR99bMK/view?usp=sharing',
-                        "_blank");
+                    html.window.open('/assets/CV_VICTOR_COMBAT.pdf', "_blank");
                   },
                   style: TextButton.styleFrom(
                     padding: EdgeInsets.symmetric(
