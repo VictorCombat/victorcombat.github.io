@@ -31,6 +31,41 @@ class Gallery extends ProjectSection {
 
 List<Project> projects = [
   Project(
+    title: "3D Mesh Modeling & Deformation",
+    shortDescription:
+        "3D mesh modeling with Bezier surface and by revolution, mesh deformation, UI made with QT",
+    bannerURL: "images/3d-modeling/img_glass_shear.jpg",
+    sections: [
+      TextProjectSection(
+          title: "About",
+          text:
+              "This is a small project during my first semester of my last year of studies in computer graphics. The goal was to implement Bezier surface modeling, surface of revolution and mesh deformation using Barr's space transformation. The UI is made with Qt5."),
+      TextProjectSection(
+          title: "Work Done",
+          text: "The following features has been implemented :\n" +
+              "   -- Generate Bezier Surface with control points\n" +
+              "   -- Generate a model by revolution using a Bezier Curve\n" +
+              "   -- Global Deformation : Twist, Taper, Bend, Shear\n" +
+              "   -- Local Deformation : Bump"),
+      Gallery(
+        title: "Gallery",
+        viewportFraction: 0.8,
+        imagesURLs: [
+          "assets/images/3d-modeling/img_bezier_surface_4x4.jpg",
+          "assets/images/3d-modeling/img_bezier_surface_6x6.jpg",
+          "assets/images/3d-modeling/img_sphere_bump.jpg",
+          "assets/images/3d-modeling/img_tube_twist.jpg",
+          "assets/images/3d-modeling/img_sof_glass.jpg",
+          "assets/images/3d-modeling/img_glass_shear.jpg",
+          "assets/images/3d-modeling/img_sof_vase.jpg",
+          "assets/images/3d-modeling/img_vase_bend.jpg",
+          "assets/images/3d-modeling/img_vase_multiple_deform.jpg",
+          "assets/images/3d-modeling/img_object_deform.jpg",
+        ],
+      ),
+    ],
+  ),
+  Project(
     title: "Representation of the virtual city in Unity",
     shortDescription:
         "3D modeling in the Unity game engine of the city of Lyon from data in CityGML format",
