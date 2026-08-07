@@ -1,0 +1,668 @@
+{
+  "meta": {
+    "title": {
+      "fr": "Victor Combat — Portfolio",
+      "en": "Victor Combat — Portfolio"
+    },
+    "description": {
+      "fr": "Portfolio de Victor Combat, ingénieur R&D Vision et Robotique à Lyon.",
+      "en": "Portfolio of Victor Combat, R&D engineer in Vision and Robotics based in Lyon."
+    }
+  },
+  "ui": {
+    "nav": {
+      "about": { "fr": "Présentation", "en": "About" },
+      "skills": { "fr": "Compétences", "en": "Skills" },
+      "education": { "fr": "Formations", "en": "Education" },
+      "experience": { "fr": "Expériences", "en": "Experience" },
+      "certifications": { "fr": "Certifications", "en": "Certifications" },
+      "projects": { "fr": "Réalisations", "en": "Projects" }
+    },
+    "cvFr": { "fr": "CV (FR)", "en": "Resume (FR)" },
+    "cvEn": { "fr": "CV (EN)", "en": "Resume (EN)" },
+    "openProject": { "fr": "Voir le projet", "en": "View project" },
+    "close": { "fr": "Fermer", "en": "Close" },
+    "missions": { "fr": "Missions", "en": "Missions" },
+    "courses": { "fr": "Cours", "en": "Courses" },
+    "menuOpen": { "fr": "Ouvrir le menu", "en": "Open menu" },
+    "menuClose": { "fr": "Fermer le menu", "en": "Close menu" },
+    "footer": {
+      "fr": "© {year} Victor Combat — Construit avec HTML, CSS & JavaScript.",
+      "en": "© {year} Victor Combat — Built with HTML, CSS & JavaScript."
+    }
+  },
+  "profile": {
+    "name": "Victor Combat",
+    "photo": "assets/images/photo_victor_1000x1000.jpg",
+    "role": {
+      "fr": "Ingénieur R&D — Vision et Robotique",
+      "en": "R&D Engineer — Vision & Robotics"
+    },
+    "location": {
+      "fr": "Lyon, France",
+      "en": "Lyon, France"
+    },
+    "bio": {
+      "fr": "Curieux et passionné de technologies, toujours prêt à apprendre au quotidien. Spécialisé en vision 3D, robotique adaptative et architecture logicielle. Actuellement à la recherche d’un nouveau poste pour développer mes compétences en logiciel et algorithmie 3D.",
+      "en": "Curious and passionate about technology, always eager to learn. Specialized in 3D vision, adaptive robotics and software architecture. Currently looking for a new role to grow further in software development and 3D algorithms."
+    },
+    "email": "victor.cmbt@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/victor-combat/",
+    "github": "https://github.com/VictorCombat",
+    "cvFr": "assets/cv/CV_VICTOR_COMBAT_FR.pdf",
+    "cvEn": "assets/cv/CV_VICTOR_COMBAT_FR.pdf"
+  },
+  "skills": {
+    "lead": {
+      "fr": "Domaines d’expertise, outils techniques et qualités personnelles.",
+      "en": "Areas of expertise, technical tools and personal strengths."
+    },
+    "domains": {
+      "title": { "fr": "Domaines", "en": "Domains" },
+      "items": [
+        { "fr": "Génie logiciel", "en": "Software engineering" },
+        { "fr": "Robotique", "en": "Robotics" },
+        { "fr": "Vision 3D", "en": "3D vision" },
+        { "fr": "Algorithmie", "en": "Algorithms" },
+        { "fr": "Informatique graphique", "en": "Computer graphics" }
+      ]
+    },
+    "hard": {
+      "title": { "fr": "Hard skills", "en": "Hard skills" },
+      "items": [
+        "C++",
+        "C#",
+        "Python",
+        "Git",
+        "Halcon",
+        "Unity",
+        "Qt / QML",
+        "ROS / MoveIt",
+        "ROS 2",
+        "Open3D",
+        "PCL",
+        "OpenCV",
+        "ReactJS",
+        "ThreeJS",
+        "JavaScript",
+        "WPF / MVVM"
+      ]
+    },
+    "soft": {
+      "title": { "fr": "Soft skills", "en": "Soft skills" },
+      "items": [
+        { "fr": "Autonomie", "en": "Autonomy" },
+        { "fr": "Créativité", "en": "Creativity" },
+        { "fr": "Curiosité", "en": "Curiosity" },
+        { "fr": "Rigueur", "en": "Rigor" },
+        { "fr": "Ténacité", "en": "Tenacity" },
+        { "fr": "Anglais (TOEIC 965)", "en": "English (TOEIC 965)" }
+      ]
+    }
+  },
+  "education": {
+    "lead": {
+      "fr": "Parcours académique en informatique, image et technologies 3D.",
+      "en": "Academic path in computer science, imaging and 3D technologies."
+    },
+    "items": [
+      {
+        "school": {
+          "fr": "Université Claude Bernard Lyon 1",
+          "en": "Claude Bernard University Lyon 1"
+        },
+        "degree": {
+          "fr": "Master Informatique — Image, Développement et Technologies 3D (ID3D)",
+          "en": "Master's in Computer Science — Image, Development and 3D Technologies (ID3D)"
+        },
+        "period": {
+          "fr": "2019 — 2022",
+          "en": "2019 — 2022"
+        },
+        "location": {
+          "fr": "Lyon, France",
+          "en": "Lyon, France"
+        },
+        "description": {
+          "fr": "Formation spécialisée en informatique graphique, vision et technologies 3D (M1 puis M2 ID3D).",
+          "en": "Specialized training in computer graphics, vision and 3D technologies (M1 then M2 ID3D)."
+        },
+        "courses": [
+          {
+            "title": {
+              "fr": "[Placeholder] Informatique graphique avancée",
+              "en": "[Placeholder] Advanced computer graphics"
+            },
+            "description": {
+              "fr": "Description du cours à compléter : objectifs, projets et notions clés.",
+              "en": "Course description to complete: goals, projects and key concepts."
+            },
+            "tags": ["C++", "OpenGL", "3D"]
+          },
+          {
+            "title": {
+              "fr": "[Placeholder] Vision par ordinateur",
+              "en": "[Placeholder] Computer vision"
+            },
+            "description": {
+              "fr": "Description du cours à compléter : traitements d’images, segmentation, applications.",
+              "en": "Course description to complete: image processing, segmentation, applications."
+            },
+            "tags": ["OpenCV", "Python", "Vision"]
+          },
+          {
+            "title": {
+              "fr": "[Placeholder] Développement 3D / moteurs",
+              "en": "[Placeholder] 3D development / engines"
+            },
+            "description": {
+              "fr": "Description du cours à compléter : pipelines 3D, outils et mises en pratique.",
+              "en": "Course description to complete: 3D pipelines, tools and hands-on work."
+            },
+            "tags": ["Unity", "CityGML", "3D"]
+          }
+        ],
+        "tags": ["Informatique graphique", "Vision", "3D", "C++"]
+      },
+      {
+        "school": {
+          "fr": "Université Claude Bernard Lyon 1",
+          "en": "Claude Bernard University Lyon 1"
+        },
+        "degree": {
+          "fr": "Licence Informatique",
+          "en": "Bachelor's in Computer Science"
+        },
+        "period": {
+          "fr": "2016 — 2019",
+          "en": "2016 — 2019"
+        },
+        "location": {
+          "fr": "Lyon, France",
+          "en": "Lyon, France"
+        },
+        "description": {
+          "fr": "Socle solide en algorithmique, génie logiciel et développement orienté objet.",
+          "en": "Solid foundation in algorithms, software engineering and object-oriented development."
+        },
+        "courses": [
+          {
+            "title": {
+              "fr": "[Placeholder] Algorithmique et structures de données",
+              "en": "[Placeholder] Algorithms and data structures"
+            },
+            "description": {
+              "fr": "Description du cours à compléter.",
+              "en": "Course description to complete."
+            },
+            "tags": ["Algorithmie", "Java", "C++"]
+          },
+          {
+            "title": {
+              "fr": "[Placeholder] Génie logiciel & projets",
+              "en": "[Placeholder] Software engineering & projects"
+            },
+            "description": {
+              "fr": "Description du cours à compléter.",
+              "en": "Course description to complete."
+            },
+            "tags": ["MVC", "JavaFX", "Git"]
+          }
+        ],
+        "tags": ["Algorithmie", "OOP", "Génie logiciel"]
+      },
+      {
+        "school": {
+          "fr": "Lycée Jean-Paul Sartre",
+          "en": "Lycée Jean-Paul Sartre"
+        },
+        "degree": {
+          "fr": "Baccalauréat Scientifique — Sciences de l’Ingénieur",
+          "en": "Scientific Baccalaureate — Engineering Sciences"
+        },
+        "period": {
+          "fr": "2015 — 2016",
+          "en": "2015 — 2016"
+        },
+        "location": {
+          "fr": "Lyon, France",
+          "en": "Lyon, France"
+        },
+        "description": {
+          "fr": "Formation scientifique avec spécialité sciences de l’ingénieur.",
+          "en": "Scientific track with engineering sciences specialization."
+        },
+        "courses": [
+          {
+            "title": {
+              "fr": "[Placeholder] Sciences de l’ingénieur",
+              "en": "[Placeholder] Engineering sciences"
+            },
+            "description": {
+              "fr": "Description du cours à compléter.",
+              "en": "Course description to complete."
+            },
+            "tags": ["Sciences", "Ingénierie"]
+          }
+        ],
+        "tags": ["Sciences", "Ingénierie"]
+      }
+    ]
+  },
+  "experience": {
+    "lead": {
+      "fr": "Missions en robotique, vision 3D et développement logiciel.",
+      "en": "Missions in robotics, 3D vision and software development."
+    },
+    "items": [
+      {
+        "company": "Innodura TB",
+        "role": {
+          "fr": "Ingénieur Vision et Robotique",
+          "en": "Vision & Robotics Engineer"
+        },
+        "period": {
+          "fr": "Septembre 2022 — Présent",
+          "en": "September 2022 — Present"
+        },
+        "location": {
+          "fr": "Lyon, France",
+          "en": "Lyon, France"
+        },
+        "missions": {
+          "fr": [
+            "Développement de solutions logicielles pour la robotique adaptative",
+            "Applications : dévracage hétérogène, accrochage automatique, décapage laser, polissage robotisé",
+            "Développement et intégration d’algorithmes de vision 3D et d’IA",
+            "Définition et implémentation d’architectures logicielles pour la robotique",
+            "Architecture backend (ROS 2), frontend web (ReactJS, ThreeJS), communication via WebSocket",
+            "Développement robotique ABB / STÄUBLI",
+            "Capteurs 3D : ZIVID / SICK / VISIONERF / KEYENCE"
+          ],
+          "en": [
+            "Development of software solutions for adaptive robotics",
+            "Applications: heterogeneous bin picking, automatic hanging, laser stripping, robotic polishing",
+            "Development and integration of 3D vision and AI algorithms",
+            "Definition and implementation of software architectures for robotics",
+            "Backend architecture (ROS 2), web frontend (ReactJS, ThreeJS), WebSocket communication",
+            "ABB / STÄUBLI robot programming",
+            "3D sensors: ZIVID / SICK / VISIONERF / KEYENCE"
+          ]
+        },
+        "tags": ["ROS 2", "Vision 3D", "IA", "ReactJS", "ThreeJS", "WebSocket", "ABB", "STÄUBLI", "C++"]
+      },
+      {
+        "company": "Innodura TB",
+        "role": {
+          "fr": "Stagiaire R&D — Robotique",
+          "en": "R&D Intern — Robotics"
+        },
+        "period": {
+          "fr": "Février 2022 — Août 2022",
+          "en": "February 2022 — August 2022"
+        },
+        "location": {
+          "fr": "Lyon, France",
+          "en": "Lyon, France"
+        },
+        "missions": {
+          "fr": [
+            "Intégration d’algorithmes de path planning pour robots miniers et dévracage industriel",
+            "Programmation robotique avec ROS et MoveIt",
+            "Traitement de nuages de points par voxelisation (PCL / Octomap / Voxels)"
+          ],
+          "en": [
+            "Integration of path-planning algorithms for mining robots and industrial bin picking",
+            "Robot programming with ROS and MoveIt",
+            "Point-cloud processing via voxelization (PCL / Octomap / Voxels)"
+          ]
+        },
+        "tags": ["ROS", "MoveIt", "Path planning", "PCL", "Octomap", "Voxels"]
+      },
+      {
+        "company": "SENZU SAS",
+        "role": {
+          "fr": "Stagiaire développement logiciel",
+          "en": "Software Development Intern"
+        },
+        "period": {
+          "fr": "Juin 2019 — Août 2019",
+          "en": "June 2019 — August 2019"
+        },
+        "location": {
+          "fr": "Région de Lyon, France",
+          "en": "Lyon area, France"
+        },
+        "missions": {
+          "fr": [
+            "Développement d’un client lourd de lecture et d’encodage de puces NFC",
+            "Mise en œuvre d’une architecture MVVM en C# / WPF"
+          ],
+          "en": [
+            "Development of a desktop client for reading and encoding NFC chips",
+            "Implementation of an MVVM architecture with C# / WPF"
+          ]
+        },
+        "tags": ["C#", "WPF", "MVVM", "NFC"]
+      },
+      {
+        "company": "EARL Les Pends",
+        "role": {
+          "fr": "Ouvrier agricole saisonnier",
+          "en": "Seasonal farm worker"
+        },
+        "period": {
+          "fr": "Étés 2013 — 2016",
+          "en": "Summers 2013 — 2016"
+        },
+        "location": {
+          "fr": "Tain-l’Hermitage, France",
+          "en": "Tain-l’Hermitage, France"
+        },
+        "missions": {
+          "fr": [
+            "Récolte de fruits et travail des vignes (jobs d’été)"
+          ],
+          "en": [
+            "Fruit harvesting and vineyard work (summer jobs)"
+          ]
+        },
+        "tags": ["Autonomie", "Rigueur", "Travail d’équipe"]
+      }
+    ]
+  },
+  "certifications": {
+    "lead": {
+      "fr": "Certifications et formations en ligne.",
+      "en": "Certifications and online courses."
+    },
+    "items": [
+      {
+        "title": {
+          "fr": "Devenir développeur / développeuse C++",
+          "en": "Become a C++ developer"
+        },
+        "issuer": { "fr": "LinkedIn Learning", "en": "LinkedIn Learning" },
+        "year": ""
+      },
+      {
+        "title": {
+          "fr": "QML for Beginners",
+          "en": "QML for Beginners"
+        },
+        "issuer": { "fr": "Formation en ligne", "en": "Online course" },
+        "year": ""
+      },
+      {
+        "title": {
+          "fr": "Devenir chef / cheffe de projet",
+          "en": "Become a project manager"
+        },
+        "issuer": { "fr": "LinkedIn Learning", "en": "LinkedIn Learning" },
+        "year": ""
+      },
+      {
+        "title": {
+          "fr": "Maîtriser les soft skills les plus demandées",
+          "en": "Master the most in-demand soft skills"
+        },
+        "issuer": { "fr": "LinkedIn Learning", "en": "LinkedIn Learning" },
+        "year": ""
+      },
+      {
+        "title": {
+          "fr": "Certificat informatique et internet (C2i), niveau 1",
+          "en": "Computer and Internet Certificate (C2i), level 1"
+        },
+        "issuer": { "fr": "Certification universitaire", "en": "University certification" },
+        "year": ""
+      }
+    ]
+  },
+  "projects": {
+    "lead": {
+      "fr": "Projets personnels et universitaires — cliquez pour plus de détails.",
+      "en": "Personal and academic projects — click for more details."
+    },
+    "items": [
+      {
+        "id": "3d-modeling",
+        "title": {
+          "fr": "Modélisation & déformation de maillages 3D",
+          "en": "3D Mesh Modeling & Deformation"
+        },
+        "shortDescription": {
+          "fr": "Modélisation de surfaces de Bézier et par révolution, déformations de maillage, interface Qt.",
+          "en": "3D mesh modeling with Bézier surfaces and revolution, mesh deformation, Qt UI."
+        },
+        "banner": "assets/images/3d-modeling/img_glass_shear.jpg",
+        "tags": ["C++", "Qt", "Informatique graphique", "Bézier"],
+        "link": "",
+        "sections": [
+          {
+            "title": { "fr": "À propos", "en": "About" },
+            "text": {
+              "fr": "Petit projet réalisé au premier semestre de Master en informatique graphique. Objectif : implémenter la modélisation de surfaces de Bézier, les surfaces de révolution et la déformation de maillage via les transformations spatiales de Barr. L’interface est réalisée avec Qt5.",
+              "en": "Small project during the first semester of my Master's in computer graphics. Goal: implement Bézier surface modeling, surfaces of revolution and mesh deformation using Barr's space transformations. The UI is built with Qt5."
+            }
+          },
+          {
+            "title": { "fr": "Réalisations", "en": "Work done" },
+            "text": {
+              "fr": "— Génération de surface de Bézier avec points de contrôle\n— Génération d’un modèle par révolution à partir d’une courbe de Bézier\n— Déformations globales : Twist, Taper, Bend, Shear\n— Déformation locale : Bump",
+              "en": "— Generate Bézier surface with control points\n— Generate a model by revolution using a Bézier curve\n— Global deformations: Twist, Taper, Bend, Shear\n— Local deformation: Bump"
+            }
+          }
+        ],
+        "media": [
+          { "type": "image", "src": "assets/images/3d-modeling/img_bezier_surface_4x4.jpg" },
+          { "type": "image", "src": "assets/images/3d-modeling/img_bezier_surface_6x6.jpg" },
+          { "type": "image", "src": "assets/images/3d-modeling/img_sphere_bump.jpg" },
+          { "type": "image", "src": "assets/images/3d-modeling/img_tube_twist.jpg" },
+          { "type": "image", "src": "assets/images/3d-modeling/img_sof_glass.jpg" },
+          { "type": "image", "src": "assets/images/3d-modeling/img_glass_shear.jpg" },
+          { "type": "image", "src": "assets/images/3d-modeling/img_sof_vase.jpg" },
+          { "type": "image", "src": "assets/images/3d-modeling/img_vase_bend.jpg" },
+          { "type": "image", "src": "assets/images/3d-modeling/img_vase_multiple_deform.jpg" },
+          { "type": "image", "src": "assets/images/3d-modeling/img_object_deform.jpg" }
+        ]
+      },
+      {
+        "id": "pom-vcity",
+        "title": {
+          "fr": "Représentation de la ville virtuelle dans Unity",
+          "en": "Representation of the virtual city in Unity"
+        },
+        "shortDescription": {
+          "fr": "Modélisation 3D de Lyon dans Unity à partir de données CityGML.",
+          "en": "3D modeling of Lyon in Unity from CityGML data."
+        },
+        "banner": "assets/images/pom-vcity/lyon_3eme.png",
+        "tags": ["Unity", "CityGML", "C++", "3D"],
+        "link": "https://github.com/VCityTeam/DA-POM-VilleUnity",
+        "sections": [
+          {
+            "title": { "fr": "À propos", "en": "About" },
+            "text": {
+              "fr": "Projet de 4 mois en Master 1 Informatique (Université Claude Bernard Lyon 1), réalisé en binôme, visant à représenter la ville de Lyon dans le moteur Unity.",
+              "en": "4-month project during Master 1 Computer Science at Claude Bernard University Lyon 1, done in a pair, aiming to represent the city of Lyon in the Unity engine."
+            }
+          },
+          {
+            "title": { "fr": "Méthodologie", "en": "Methodology" },
+            "text": {
+              "fr": "Méthode agile avec réunions hebdomadaires (« weekly minutes ») pour faire le bilan et planifier la semaine suivante. Les recherches, technologies et algorithmes ont été documentés pour assurer la pérennité du travail.",
+              "en": "Agile methodology with weekly meetings (« weekly minutes ») to review progress and plan the next week. Research, technologies and algorithms were carefully documented for sustainability."
+            }
+          },
+          {
+            "title": { "fr": "Réalisations", "en": "Work done" },
+            "text": {
+              "fr": "Travail organisé de façon modulaire pour être réutilisable.\n— Isolation d’un parseur CityGML existant\n— Module de conversion CityGML → OBJ (format supporté par Unity)\n— Amélioration des modules de découpage des données CityGML (volumes importants)",
+              "en": "Work organized in a modular way for reuse.\n— Isolation of an existing CityGML parser\n— CityGML → OBJ conversion module (Unity-supported format)\n— Improved CityGML data cutting/splitting modules for large datasets"
+            }
+          }
+        ],
+        "media": [
+          { "type": "image", "src": "assets/images/pom-vcity/lyon_1er_hdv_terreaux_musee_beaux_arts.png" },
+          { "type": "image", "src": "assets/images/pom-vcity/lyon_1er_opera.png" },
+          { "type": "image", "src": "assets/images/pom-vcity/lyon_3eme_desgenettes.png" },
+          { "type": "image", "src": "assets/images/pom-vcity/lyon_5eme_fourviere_02.png" },
+          { "type": "image", "src": "assets/images/pom-vcity/villeurbanne.png" },
+          { "type": "image", "src": "assets/images/pom-vcity/mont_d_or.png" },
+          { "type": "image", "src": "assets/images/pom-vcity/lyon_3eme.png" }
+        ]
+      },
+      {
+        "id": "pac-man",
+        "title": {
+          "fr": "Pac-Man",
+          "en": "Pac-Man"
+        },
+        "shortDescription": {
+          "fr": "Réplique du célèbre jeu Pac-Man avec éditeur de niveaux.",
+          "en": "Replica of the famous Pac-Man game with a level editor."
+        },
+        "banner": "assets/images/pac-man/pac-man-banner.png",
+        "tags": ["Java", "JavaFX", "MVC", "Jeu"],
+        "link": "https://github.com/VictorCombat/pac-man",
+        "sections": [
+          {
+            "title": { "fr": "À propos", "en": "About" },
+            "text": {
+              "fr": "Projet de 3 semaines en Licence 3 Informatique : recréer Pac-Man en Java avec JavaFX, en programmation orientée objet et architecture MVC.",
+              "en": "3-week project in the 3rd year of a Computer Science bachelor's degree: recreate Pac-Man in Java with JavaFX, using OOP and MVC architecture."
+            }
+          },
+          {
+            "title": { "fr": "Fonctionnalités", "en": "Main features" },
+            "text": {
+              "fr": "— Déplacement de Pac-Man sur la grille\n— Collisions avec les fantômes\n— Points en collectant les pastilles\n— Création / édition / suppression de niveaux",
+              "en": "— Move Pac-Man through the grid\n— Colliding with enemy ghosts\n— Earn points by collecting dots\n— Create / edit / delete levels"
+            }
+          }
+        ],
+        "media": [
+          { "type": "image", "src": "assets/images/pac-man/pac-man-01.png" },
+          { "type": "image", "src": "assets/images/pac-man/pac-man-02.png" },
+          { "type": "image", "src": "assets/images/pac-man/pac-man-03.png" },
+          { "type": "image", "src": "assets/images/pac-man/pac-man-04.png" }
+        ]
+      },
+      {
+        "id": "cryptotrack",
+        "title": {
+          "fr": "CryptoTrack",
+          "en": "CryptoTrack"
+        },
+        "shortDescription": {
+          "fr": "Application mobile de suivi des cours de cryptomonnaies (Flutter).",
+          "en": "Cryptocurrency price tracking mobile app (Flutter)."
+        },
+        "banner": "assets/images/cryptotrack/cryptotrack-banner.jpg",
+        "tags": ["Flutter", "Dart", "API", "Mobile"],
+        "link": "",
+        "sections": [
+          {
+            "title": { "fr": "À propos", "en": "About" },
+            "text": {
+              "fr": "Projet personnel pour apprendre le développement d’applications mobiles cross-platform avec Flutter : suivi des prix (Bitcoin, Ethereum, etc.).",
+              "en": "Personal project to learn cross-platform mobile development with Flutter: track cryptocurrency prices (Bitcoin, Ethereum, and more)."
+            }
+          },
+          {
+            "title": { "fr": "Fonctionnalités", "en": "Main features" },
+            "text": {
+              "fr": "— Récupération de données via API\n— Gestion d’état de l’application\n— Navigation\n— Pull to refresh\n— Mise à jour automatique\n— Favoris persistés et réordonnables\n— Page de détail\n— Convertisseur crypto / fiat\n— Recherche et tri",
+              "en": "— Fetch data from API\n— Application state management\n— Navigation\n— Pull to refresh\n— Automatic data updates\n— Persisted & reorderable favorites\n— Details page\n— Crypto / fiat converter\n— Search and sorting"
+            }
+          }
+        ],
+        "media": [
+          { "type": "image", "src": "assets/images/cryptotrack/cryptotrack-home-page-top.jpg" },
+          { "type": "image", "src": "assets/images/cryptotrack/cryptotrack-home-page-bottom.jpg" },
+          { "type": "image", "src": "assets/images/cryptotrack/cryptotrack-fav-page.jpg" },
+          { "type": "image", "src": "assets/images/cryptotrack/cryptotrack-fav-page-drag.jpg" },
+          { "type": "image", "src": "assets/images/cryptotrack/cryptotrack-converter.jpg" },
+          { "type": "image", "src": "assets/images/cryptotrack/cryptotrack-details-page-1D.jpg" },
+          { "type": "image", "src": "assets/images/cryptotrack/cryptotrack-search-page.jpg" },
+          { "type": "image", "src": "assets/images/cryptotrack/cryptotrack-search-page-sort-modal.jpg" }
+        ]
+      },
+      {
+        "id": "bg-subtraction",
+        "title": {
+          "fr": "Extraction d’arrière-plan & Region Growing",
+          "en": "Background subtraction & Region Growing"
+        },
+        "shortDescription": {
+          "fr": "Introduction à OpenCV : soustraction de fond et algorithme de region growing.",
+          "en": "Introduction to OpenCV: background subtraction & region growing."
+        },
+        "banner": "assets/images/bg-subtraction-region-growing/rg-auto-02.jpg",
+        "tags": ["OpenCV", "Python", "Vision", "Image"],
+        "link": "",
+        "sections": [
+          {
+            "title": { "fr": "À propos", "en": "About" },
+            "text": {
+              "fr": "Projet du cours d’analyse d’images en Master 1 : mise en pratique de méthodes de traitement d’images avec OpenCV (Python).",
+              "en": "Image analysis course project in Master 1: apply image processing methods with OpenCV (Python)."
+            }
+          },
+          {
+            "title": { "fr": "Étapes", "en": "Main features" },
+            "text": {
+              "fr": "— Prise en main d’OpenCV (filtres courants)\n— Soustraction d’arrière-plan / extraction de silhouette\n— Implémentation du region growing sur image\n— Region growing sur frame vidéo avec enveloppe et grille de seeds",
+              "en": "— Getting started with OpenCV using common filters\n— Background subtraction / silhouette extraction\n— Region growing on images\n— Region growing on video frames using an envelope and seed grid"
+            }
+          }
+        ],
+        "media": [
+          { "type": "image", "src": "assets/images/bg-subtraction-region-growing/bg-subtraction-01.png" },
+          { "type": "image", "src": "assets/images/bg-subtraction-region-growing/bg-subtraction-02.png" },
+          { "type": "image", "src": "assets/images/bg-subtraction-region-growing/rg-01.jpg" },
+          { "type": "image", "src": "assets/images/bg-subtraction-region-growing/rg-02.jpg" },
+          { "type": "image", "src": "assets/images/bg-subtraction-region-growing/rg-auto-01.jpg" },
+          { "type": "image", "src": "assets/images/bg-subtraction-region-growing/rg-auto-02.jpg" }
+        ]
+      },
+      {
+        "id": "orbital-defense",
+        "title": {
+          "fr": "Orbital Defense",
+          "en": "Orbital Defense"
+        },
+        "shortDescription": {
+          "fr": "Jeu arcade infinite-shooter réalisé avec Unity en une semaine.",
+          "en": "Infinite-shooter arcade game made with Unity in one week."
+        },
+        "banner": "assets/images/orbital-defense/orbital-defense-banner.jpg",
+        "tags": ["Unity", "C#", "Game Dev"],
+        "link": "",
+        "sections": [
+          {
+            "title": { "fr": "À propos", "en": "About" },
+            "text": {
+              "fr": "En apprenant Unity en autonomie, défi personnel de créer un jeu en une semaine. Orbital Defense est né de ce challenge.",
+              "en": "While learning Unity on my own, I challenged myself to make a game in a week. Orbital Defense came from that challenge."
+            }
+          },
+          {
+            "title": { "fr": "Fonctionnalités", "en": "Main features" },
+            "text": {
+              "fr": "— Tirer et détruire des ennemis pour scorér\n— Power-ups\n— Différents archétypes d’ennemis\n— Effet bloom\n— Camera shake et particules à la destruction",
+              "en": "— Shoot & destroy enemies to score\n— Pick up power-ups\n— Different enemy archetypes\n— Bloom effect\n— Camera shake & particles when destroying enemies"
+            }
+          }
+        ],
+        "media": [
+          { "type": "image", "src": "assets/images/orbital-defense/orbital-defense-home-screen.jpg" },
+          { "type": "image", "src": "assets/images/orbital-defense/orbital-defense-ingame-01.jpg" },
+          { "type": "image", "src": "assets/images/orbital-defense/orbital-defense-ingame-02.jpg" },
+          { "type": "image", "src": "assets/images/orbital-defense/orbital-defense-gameover-screen.jpg" }
+        ]
+      }
+    ]
+  }
+}
