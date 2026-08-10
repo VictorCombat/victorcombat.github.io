@@ -1,0 +1,115 @@
+.site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(900px 500px at 15% 10%, rgba(124, 77, 255, 0.18), transparent 55%),
+    radial-gradient(800px 480px at 85% 20%, rgba(91, 47, 214, 0.14), transparent 50%),
+    radial-gradient(700px 500px at 50% 100%, rgba(124, 77, 255, 0.1), transparent 55%),
+    linear-gradient(180deg, #161218 0%, var(--color-bg) 45%, #0e0c10 100%);
+}
+
+.site-bg__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.site-bg__hex {
+  fill: url(#hex-grad-idle);
+  fill-opacity: 0.06;
+  stroke: rgba(167, 139, 250, 0.14);
+  stroke-width: 1;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.site-bg__hex--pulse {
+  animation: hex-pulse var(--hex-dur, 4.5s) ease-in-out infinite;
+  animation-delay: var(--hex-delay, 0s);
+}
+
+.site-bg__hex--flash {
+  animation: hex-flash var(--hex-dur, 2.8s) ease-in-out 1;
+  animation-delay: var(--hex-delay, 0s);
+}
+
+.site-bg__glow {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(124, 77, 255, 0.08), transparent 35%),
+    radial-gradient(circle at 70% 60%, rgba(91, 47, 214, 0.07), transparent 40%);
+  animation: hex-glow-drift 18s ease-in-out infinite alternate;
+}
+
+@keyframes hex-pulse {
+  0%,
+  100% {
+    fill-opacity: 0.04;
+    stroke: rgba(167, 139, 250, 0.12);
+    filter: none;
+  }
+  45% {
+    fill-opacity: 0.42;
+    stroke: rgba(196, 181, 253, 0.55);
+    filter: drop-shadow(0 0 10px rgba(124, 77, 255, 0.35));
+  }
+  70% {
+    fill-opacity: 0.22;
+    stroke: rgba(167, 139, 250, 0.35);
+  }
+}
+
+@keyframes hex-flash {
+  0% {
+    fill-opacity: 0.05;
+    stroke: rgba(167, 139, 250, 0.14);
+    filter: none;
+  }
+  35% {
+    fill-opacity: 0.55;
+    stroke: rgba(221, 214, 254, 0.7);
+    filter: drop-shadow(0 0 14px rgba(167, 139, 250, 0.55));
+  }
+  100% {
+    fill-opacity: 0.05;
+    stroke: rgba(167, 139, 250, 0.14);
+    filter: none;
+  }
+}
+
+@keyframes hex-glow-drift {
+  from {
+    transform: translate3d(-2%, -1%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(2%, 2%, 0) scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-bg__hex--pulse,
+  .site-bg__hex--flash,
+  .site-bg__glow {
+    animation: none;
+  }
+
+  .site-bg__hex {
+    fill-opacity: 0.1;
+  }
+}
+
+/* Keep page content above the fixed background */
+body > main,
+body > footer {
+  position: relative;
+  z-index: 1;
+}
+
+body > .site-header {
+  z-index: 100;
+}

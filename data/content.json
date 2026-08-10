@@ -24,11 +24,12 @@
     "close": { "fr": "Fermer", "en": "Close" },
     "missions": { "fr": "Missions", "en": "Missions" },
     "courses": { "fr": "Cours", "en": "Courses" },
+    "coursesToggle": { "fr": "Voir les cours ({count})", "en": "View courses ({count})" },
     "menuOpen": { "fr": "Ouvrir le menu", "en": "Open menu" },
     "menuClose": { "fr": "Fermer le menu", "en": "Close menu" },
     "footer": {
-      "fr": "© {year} Victor Combat — Construit avec HTML, CSS & JavaScript.",
-      "en": "© {year} Victor Combat — Built with HTML, CSS & JavaScript."
+      "fr": "© {year} Victor Combat",
+      "en": "© {year} Victor Combat"
     }
   },
   "profile": {
@@ -43,14 +44,14 @@
       "en": "Lyon, France"
     },
     "bio": {
-      "fr": "Curieux et passionné de technologies, toujours prêt à apprendre au quotidien. Spécialisé en vision 3D, robotique adaptative et architecture logicielle. Actuellement à la recherche d’un nouveau poste pour développer mes compétences en logiciel et algorithmie 3D.",
-      "en": "Curious and passionate about technology, always eager to learn. Specialized in 3D vision, adaptive robotics and software architecture. Currently looking for a new role to grow further in software development and 3D algorithms."
+      "fr": "Issu d’un Master en image et technologies 3D, je me passionne pour le développement logiciel, l’algorithmie et les architectures applicatives. Fort d’une expérience en vision 3D et robotique, j’aime concevoir des logiciels robustes et évolutifs — et je cherche à ouvrir ces compétences à d’autres domaines d’application.",
+      "en": "With a Master's degree in imaging and 3D technologies, I’m passionate about software development, algorithms and application architecture. Building on experience in 3D vision and robotics, I enjoy designing robust, evolvable software — and I’m eager to bring these skills into new application domains."
     },
     "email": "victor.cmbt@gmail.com",
     "linkedin": "https://www.linkedin.com/in/victor-combat/",
     "github": "https://github.com/VictorCombat",
-    "cvFr": "assets/cv/CV_VICTOR_COMBAT_FR.pdf",
-    "cvEn": "assets/cv/CV_VICTOR_COMBAT_FR.pdf"
+    "cvFr": "assets/cv/CV_VICTOR_COMBAT_2026_FR.pdf",
+    "cvEn": "assets/cv/CV_VICTOR_COMBAT_2026_EN.pdf"
   },
   "skills": {
     "lead": {
@@ -61,35 +62,37 @@
       "title": { "fr": "Domaines", "en": "Domains" },
       "items": [
         { "fr": "Génie logiciel", "en": "Software engineering" },
-        { "fr": "Robotique", "en": "Robotics" },
-        { "fr": "Vision 3D", "en": "3D vision" },
-        { "fr": "Algorithmie", "en": "Algorithms" },
-        { "fr": "Informatique graphique", "en": "Computer graphics" }
+        { "fr": "Algorithmie", "en": "Algorithmics" },
+        { "fr": "Computer Graphics", "en": "Computer Graphics" },
+        { "fr": "Vision 3D", "en": "3D Vision" },
+        { "fr": "Robotique", "en": "Robotics" }
       ]
     },
     "hard": {
-      "title": { "fr": "Hard skills", "en": "Hard skills" },
+      "title": { "fr": "Techniques", "en": "Hard Skills" },
       "items": [
         "C++",
         "C#",
         "Python",
         "Git",
-        "Halcon",
+        "HALCON",
         "Unity",
         "Qt / QML",
-        "ROS / MoveIt",
+        "Docker",
+        "MoveIt",
         "ROS 2",
         "Open3D",
         "PCL",
         "OpenCV",
-        "ReactJS",
-        "ThreeJS",
+        "OpenGL",
         "JavaScript",
-        "WPF / MVVM"
+        "React.js",
+        "Three.js",
+        "Windows Presentation Foundation (WPF)"
       ]
     },
     "soft": {
-      "title": { "fr": "Soft skills", "en": "Soft skills" },
+      "title": { "fr": "Relationnelles", "en": "Soft Skills" },
       "items": [
         { "fr": "Autonomie", "en": "Autonomy" },
         { "fr": "Créativité", "en": "Creativity" },
@@ -103,71 +106,206 @@
   "education": {
     "lead": {
       "fr": "Parcours académique en informatique, image et technologies 3D.",
-      "en": "Academic path in computer science, imaging and 3D technologies."
+      "en": "Academic path in computer science, computer vision and 3D technologies."
     },
     "items": [
       {
         "school": {
           "fr": "Université Claude Bernard Lyon 1",
-          "en": "Claude Bernard University Lyon 1"
+          "en": "Université Claude Bernard Lyon 1"
         },
         "degree": {
-          "fr": "Master Informatique — Image, Développement et Technologies 3D (ID3D)",
-          "en": "Master's in Computer Science — Image, Development and 3D Technologies (ID3D)"
+          "fr": "Master Informatique — 2ème année — Image, Développement et Technologies 3D (ID3D)",
+          "en": "Master's in Computer Science — 2nd year — Image, Development and 3D Technologies (ID3D)"
         },
         "period": {
-          "fr": "2019 — 2022",
-          "en": "2019 — 2022"
+          "fr": "2021 — 2022",
+          "en": "2021 — 2022"
         },
         "location": {
           "fr": "Lyon, France",
           "en": "Lyon, France"
         },
         "description": {
-          "fr": "Formation spécialisée en informatique graphique, vision et technologies 3D (M1 puis M2 ID3D).",
-          "en": "Specialized training in computer graphics, vision and 3D technologies (M1 then M2 ID3D)."
+          "fr": "Formation spécialisée en informatique graphique, vision par ordinateur et technologies 3D.",
+          "en": "Specialized training in computer graphics, computer vision and 3D technologies."
         },
         "courses": [
           {
             "title": {
-              "fr": "[Placeholder] Informatique graphique avancée",
-              "en": "[Placeholder] Advanced computer graphics"
+              "fr": "Analyse, traitement d'images et vision 3D",
+              "en": "Image analysis, image processing and 3D vision"
             },
             "description": {
-              "fr": "Description du cours à compléter : objectifs, projets et notions clés.",
-              "en": "Course description to complete: goals, projects and key concepts."
+              "fr": "Module consacré à l’analyse d’images et à la vision par ordinateur, avec un focus sur la vision 3D, l’extraction de caractéristiques, la reconnaissance d’objets et l’apprentissage automatique. Mise en pratique en Python/C++ avec des outils tels que OpenCV.",
+              "en": "Module dedicated to image analysis and computer vision, with a focus on 3D vision, feature extraction, object recognition and machine learning. Practical implementation in Python/C++ with tools such as OpenCV."
             },
-            "tags": ["C++", "OpenGL", "3D"]
+            "tags": ["Computer Vision", "3D Vision", "Feature Extraction", "Object Recognition", "Machine Learning", "OpenCV", "Python", "C++", "Camera Calibration", "Stereo Vision"]
           },
           {
             "title": {
-              "fr": "[Placeholder] Vision par ordinateur",
-              "en": "[Placeholder] Computer vision"
+              "fr": "Maillage et géométrie algorithmique",
+              "en": "Mesh and algorithmic geometry"
             },
             "description": {
-              "fr": "Description du cours à compléter : traitements d’images, segmentation, applications.",
-              "en": "Course description to complete: image processing, segmentation, applications."
+              "fr": "Module consacré au calcul géométrique, à la géométrie algorithmique et à la modélisation 2D/3D, avec un focus sur la génération, reconstruction, simplification et optimisation de maillages à partir de données géométriques. Mise en pratique en C++/Qt dans des applications 3D.",
+              "en": "Module dedicated to geometric computation, algorithmic geometry and 2D/3D modeling, with a focus on the generation, reconstruction, simplification and optimization of meshes from geometric data. Practical implementation in C++/Qt in 3D applications."
             },
-            "tags": ["OpenCV", "Python", "Vision"]
+            "tags": ["Geometric Computation", "Mesh Processing", "2D/3D Modeling", "Mesh Reconstruction", "Mesh Simplification", "Mesh Optimization", "C++", "Qt", "Delaunay Triangulation", "Voronoi Diagrams"]
           },
           {
             "title": {
-              "fr": "[Placeholder] Développement 3D / moteurs",
-              "en": "[Placeholder] 3D development / engines"
+              "fr": "Rendu 3D et synthèse d'images réalistes",
+              "en": "3D rendering and realistic image synthesis"
             },
             "description": {
-              "fr": "Description du cours à compléter : pipelines 3D, outils et mises en pratique.",
-              "en": "Course description to complete: 3D pipelines, tools and hands-on work."
+              "fr": "Module consacré au rendu 3D et à la synthèse d’images réalistes, de la manipulation des maillages et textures jusqu’à la simulation de l’éclairage. Étude du pipeline graphique, OpenGL/Shaders, lancer de rayons, structures accélératrices (KD-trees, BVH) et méthodes de Monte Carlo pour un rendu efficace.",
+              "en": "Module dedicated to 3D rendering and realistic image synthesis, from the manipulation of meshes and textures to the simulation of lighting. Study of the graphics pipeline, OpenGL/Shaders, ray tracing, acceleration structures (KD-trees, BVH) and Monte Carlo methods for efficient rendering."
             },
-            "tags": ["Unity", "CityGML", "3D"]
+            "tags": ["3D Rendering", "Computer Graphics", "C++", "OpenGL", "Shaders", "Ray Tracing", "KD-trees", "BVH", "Monte Carlo Methods"]
+          },
+          {
+            "title": {
+              "fr": "Modélisation géométrique",
+              "en": "Geometric Modeling"
+            },
+            "description": {
+              "fr": "Module consacré à la modélisation géométrique en informatique graphique, couvrant les modèles volumiques et surfaciques, les courbes et surfaces de Bézier, B-Splines et NURBS, ainsi que les techniques de déformation, interpolation, approximation et génération de bruit.",
+              "en": "Module dedicated to geometric modeling in computer graphics, covering volumetric and surface models, Bézier, B-Splines and NURBS curves and surfaces, as well as deformation, interpolation, approximation and noise generation techniques."
+            },
+            "tags": ["Bézier Curves", "B-Splines", "NURBS", "Volumic Modeling", "Implicit Surfaces", "Mesh Deformation", "Interpolation", "Approximation", "Noise Generation", "Fractal Brownian Motion (FBM)"]
+          },
+          {
+            "title": {
+              "fr": "Modélisation mondes virtuels",
+              "en": "Virtual Worlds Modeling"
+            },
+            "description": {
+              "fr": "Module consacré à la génération procédurale de contenus pour les environnements virtuels temps réel, avec un focus sur la création de terrains, végétation, écosystèmes, villes et réseaux routiers à l’aide de modèles mathématiques, fractals et algorithmes procéduraux.",
+              "en": "Module dedicated to the procedural generation of contents for real-time virtual worlds, with a focus on the creation of landscapes, vegetation, ecosystems, cities and road networks using mathematical models, fractals and procedural algorithms."
+            },
+            "tags": ["Procedural Generation", "Landscape Generation", "Vegetation Generation", "Erosion Simulation", "City Generation", "Road Network Generation", "Digital Elevation Model (DEM)"]
+          },
+          {
+            "title": {
+              "fr": "Animation, corps articulés et moteurs physiques",
+              "en": "Animation, articulated bodies and physical engines"
+            },
+            "description": {
+              "fr": "Module consacré à l’animation 3D et à la simulation physique, couvrant l’animation de particules, d’objets rigides et déformables, la détection des collisions, ainsi que l’animation de personnages virtuels par rigging, skinning, cinématique inverse et motion matching. Mise en pratique en C++/OpenGL et Unity, avec une introduction aux approches de Machine Learning pour l’animation.",
+              "en": "Module dedicated to 3D animation and physical simulation, covering particle animation, rigid and deformable object animation, collision detection, as well as virtual character animation by rigging, skinning, inverse kinematics and motion matching. Practical implementation in C++/OpenGL and Unity, with an introduction to Machine Learning approaches for animation."
+            },
+            "tags": ["3D Animation", "Physical Simulation", "Particle Animation", "Rigid Object Animation", "Deformable Object Animation", "Collision Detection", "Skinning", "Inverse Kinematics", "Motion Matching", "Machine Learning", "C++", "OpenGL", "Unity"]
           }
         ],
-        "tags": ["Informatique graphique", "Vision", "3D", "C++"]
+        "tags": ["C++", "Qt", "Computer Graphics", "Computer Vision", "Algorithmics", "3D Rendering", "Unity", "OpenGL"]
       },
       {
         "school": {
           "fr": "Université Claude Bernard Lyon 1",
-          "en": "Claude Bernard University Lyon 1"
+          "en": "Université Claude Bernard Lyon 1"
+        },
+        "degree": {
+          "fr": "Master Informatique — 1ère année",
+          "en": "Master's in Computer Science — 1st year"
+        },
+        "period": {
+          "fr": "2019 — 2021",
+          "en": "2019 — 2021"
+        },
+        "location": {
+          "fr": "Lyon, France",
+          "en": "Lyon, France"
+        },
+        "description": {
+          "fr": "Formation spécialisée en génie logiciel, algorithmique, structures de données, bases de données et développement web.",
+          "en": "Specialized training in software engineering, algorithmics, data structures, databases and web development."
+        },
+        "courses": [
+          {
+            "title": {
+              "fr": "Programmation avancée",
+              "en": "Advanced programming"
+            },
+            "description": {
+              "fr": "Module consacré à la programmation générique et à la méta-programmation en C++, avec un focus sur la performance, les templates et la conception de bibliothèques robustes et réutilisables. Introduction aux STL, Boost et aux différences fondamentales entre C++ et Java.",
+              "en": "Module dedicated to generic programming and metaprogramming in C++, with a focus on performance, templates and the design of robust and reusable libraries. Introduction to STL, Boost and the fundamental differences between C++ and Java."
+            },
+            "tags": ["C++11/14/17", "STL", "Containers", "Smart Pointers", "Iterators", "Templates", "Meta-programming"]
+          },
+          {
+            "title": {
+              "fr": "Algorithmique pour l'optimisation",
+              "en": "Algorithmics for optimization"
+            },
+            "description": {
+              "fr": "Module consacré à l’optimisation combinatoire et aux méthodes algorithmiques permettant de résoudre efficacement des problèmes complexes. Étude des algorithmes probabilistes, d’approximation, exacts, de la programmation dynamique et linéaire, appliqués à des problèmes classiques d’optimisation.",
+              "en": "Module dedicated to combinatorial optimization and algorithmic methods allowing to efficiently solve complex problems. Study of probabilistic algorithms, approximation, exact, dynamic programming and linear programming, applied to classical optimization problems."
+            },
+            "tags": ["Graph Theory", "Optimization", "Combinatorial Optimization", "Dynamic Programming", "Linear Programming", "Probabilistic Algorithms"]
+          },
+          {
+            "title": {
+              "fr": "Gestion de projet et génie logiciel",
+              "en": "Project management and software engineering"
+            },
+            "description": {
+              "fr": "Module consacré à la gestion de projets informatiques, de l’analyse des besoins à la conception et au développement, en combinant méthodes agiles, UML, gestion de code, design patterns et développement dirigé par les tests (TDD).",
+              "en": "Module dedicated to the management of software projects, from needs analysis to design and development, combining agile methods, UML, code management, design patterns and test-driven development (TDD)."
+            },
+            "tags": ["Agile Methods", "Scrum", "UML", "Design Patterns", "Test-Driven Development (TDD)", "Design Patterns", "GRASP", "Units testing", "Git"]
+          },
+          {
+            "title": {
+              "fr": "Conception d'applications Web",
+              "en": "Web application development"
+            },
+            "description": {
+              "fr": "Module dédié à la conception et au développement d’applications Web, couvrant les technologies serveur et client, les API REST, applications SPA, JavaScript, AJAX/Fetch ainsi que l’intégration continue et l’optimisation des performances.",
+              "en": "Module dedicated to the design and development of Web applications, covering server and client technologies, REST APIs, SPA applications, JavaScript, AJAX/Fetch, as well as continuous integration and performance optimization."
+            },
+            "tags": ["Web Development", "REST API", "Single Page Applications (SPA)", "JavaScript", "AJAX/Fetch", "CI/CD", "Model-View-Controller (MVC)", "Full-Stack Development"]
+          },
+          {
+            "title": {
+              "fr": "Compilation et traduction des programmes",
+              "en": "Compilation and translation of programs"
+            },
+            "description": {
+              "fr": "Module consacré à la théorie des compilateurs et à la traduction des programmes, couvrant les phases d’analyse lexicale, syntaxique et sémantique, l’optimisation, l’allocation des registres et la génération de code, avec une mise en pratique en Python.",
+              "en": "Module dedicated to the theory of compilers and the translation of programs, covering the lexical analysis, syntactic and semantic analysis, optimization, register allocation and code generation, with a practical implementation in Python."
+            },
+            "tags": ["Compiler Theory", "Lexical Analysis", "Syntactic Analysis", "Semantic Analysis", "Code Generation", "Optimization", "Register Allocation", "Python"]
+          },
+          {
+            "title": {
+              "fr": "Bases de données non relationnelles",
+              "en": "Non-relational databases"
+            },
+            "description": {
+              "fr": "Module consacré aux bases de données non relationnelles, à leurs modèles et langages de requêtes, avec une étude des données objet, JSON/XML, graphes et collections, ainsi que leurs liens avec le modèle relationnel.",
+              "en": "Module dedicated to the non-relational databases, their models and query languages, with a study of object data, JSON/XML, graphs and collections, as well as their links with the relational model."
+            },
+            "tags": ["NoSQL", "MongoDB", "Object Relational Mapping (ORM)", "JSON/XML", "Graphs", "Collections"]
+          },
+          {
+            "title": {
+              "fr": "Algorithmique distribuée",
+              "en": "Distributed algorithms"
+            },
+            "description": {
+              "fr": "Module consacré à l'étude des principes et modèles des systèmes distribués, de la synchronisation et du temps logique aux algorithmes distribués sur les graphes. Conception et programmation d’algorithmes distribués, avec prise en compte du test, des pannes, de l’élection de leader et du consensus.",
+              "en": "Module dedicated to the study of the principles and models of distributed systems, from synchronization and logical time to distributed algorithms on graphs. Design and programming of distributed algorithms, with consideration of testing, failures, leader election and consensus."
+            },
+            "tags": ["Distributed Systems", "Distributed Algorithms", "Graph Theory", "Synchronization", "Leader Election", "Consensus", "D"]
+          }
+        ],
+        "tags": ["C++", "Software Engineering", "Software Architecture", "Database", "Algorithmics", "Web Development"]
+      },
+      {
+        "school": {
+          "fr": "Université Claude Bernard Lyon 1",
+          "en": "Université Claude Bernard Lyon 1"
         },
         "degree": {
           "fr": "Licence Informatique",
@@ -182,70 +320,78 @@
           "en": "Lyon, France"
         },
         "description": {
-          "fr": "Socle solide en algorithmique, génie logiciel et développement orienté objet.",
-          "en": "Solid foundation in algorithms, software engineering and object-oriented development."
+          "fr": "Socle solide en algorithmique, structures de données, génie logiciel, bases de données, développement web, réseaux et développement orienté objet.",
+          "en": "Solid foundation in algorithms, data structures, software engineering, databases, web development, networks and object-oriented development."
         },
         "courses": [
           {
             "title": {
-              "fr": "[Placeholder] Algorithmique et structures de données",
-              "en": "[Placeholder] Algorithms and data structures"
+              "fr": "Applications en Math/Info",
+              "en": "Applications in Math/Info"
             },
             "description": {
-              "fr": "Description du cours à compléter.",
-              "en": "Course description to complete."
+              "fr": "Module consacré à la science du calcul à travers des applications interdisciplinaires en mécanique, biologie, physique et économie. Renforcement des bases en algorithmique et programmation, avec mise en pratique de notions mathématiques (calcul vectoriel, dérivées, intégrales, gradients, nombres complexes, interpolation, géométrie 2D) dans des simulations et visualisations interactives.",
+              "en": "Module dedicated to the science of calculation through interdisciplinary applications in mechanics, biology, physics and economics. Reinforcement of algorithmic and programming foundations, with practical implementation of mathematical notions (vector calculus, derivatives, integrals, gradients, complex numbers, interpolation, 2D geometry) in interactive simulations and visualizations."
             },
-            "tags": ["Algorithmie", "Java", "C++"]
+            "tags": ["C++", "Mathematics", "Visualization 2D/3D", "Vector Calculus", "Scientific Computing"]
           },
           {
             "title": {
-              "fr": "[Placeholder] Génie logiciel & projets",
-              "en": "[Placeholder] Software engineering & projects"
+              "fr": "Algorithmique, Programmation et Structures de Données",
+              "en": "Algorithms, Programming and Data Structures"
             },
             "description": {
-              "fr": "Description du cours à compléter.",
-              "en": "Course description to complete."
+              "fr": "Module consacré à l'approfondissement de l’algorithmique et de la programmation en C/C++ à travers l’implémentation et la manipulation de structures de données, des tableaux et listes chaînées aux piles, files et arbres. Étude de la programmation modulaire et orientée objet, des entrées-sorties, des algorithmes de tri et des premières notions de complexité algorithmique.",
+              "en": "Module dedicated to the deepening of algorithmics and programming in C/C++ through the implementation and manipulation of data structures, from arrays and linked lists to stacks, queues and trees. Study of modular and object-oriented programming, input/output, sorting algorithms and first notions of algorithmic complexity."
             },
-            "tags": ["MVC", "JavaFX", "Git"]
-          }
-        ],
-        "tags": ["Algorithmie", "OOP", "Génie logiciel"]
-      },
-      {
-        "school": {
-          "fr": "Lycée Jean-Paul Sartre",
-          "en": "Lycée Jean-Paul Sartre"
-        },
-        "degree": {
-          "fr": "Baccalauréat Scientifique — Sciences de l’Ingénieur",
-          "en": "Scientific Baccalaureate — Engineering Sciences"
-        },
-        "period": {
-          "fr": "2015 — 2016",
-          "en": "2015 — 2016"
-        },
-        "location": {
-          "fr": "Lyon, France",
-          "en": "Lyon, France"
-        },
-        "description": {
-          "fr": "Formation scientifique avec spécialité sciences de l’ingénieur.",
-          "en": "Scientific track with engineering sciences specialization."
-        },
-        "courses": [
+            "tags": ["C/C++", "Data Structures", "Algorithms", "Programming", "Modular Programming", "Object-Oriented Programming", "Sorting Algorithms", "Algorithmic Complexity"]
+          },
           {
             "title": {
-              "fr": "[Placeholder] Sciences de l’ingénieur",
-              "en": "[Placeholder] Engineering sciences"
+              "fr": "Algorithmique, Programmation et Complexité",
+              "en": "Algorithms, Programming and Complexity"
             },
             "description": {
-              "fr": "Description du cours à compléter.",
-              "en": "Course description to complete."
+              "fr": "Module consacré à l'approfondissement de la conception, de la preuve et de l’analyse de complexité des algorithmes en C++. Étude des structures de données avancées (tables de hachage, arbres AVL, arbres 2-3-4, graphes), des algorithmes de tri et de parcours, ainsi que des méthodes de conception algorithmique (diviser pour régner, programmation dynamique, glouton). Mise en pratique de la programmation modulaire, de la gestion mémoire, des pointeurs et de la généricité.",
+              "en": "Module dedicated to the deepening of the design, proof and analysis of algorithms in C++. Study of advanced data structures (hash tables, AVL trees, 2-3-4 trees, graphs), sorting and traversal algorithms, as well as algorithmic design methods (divide and conquer, dynamic programming, greedy). Practical implementation of modular programming, memory management, pointers and generics."
             },
-            "tags": ["Sciences", "Ingénierie"]
+            "tags": ["C/C++", "Data Structures", "Advanced Algorithms", "Programming", "Modular Programming", "Object-Oriented Programming", "Graphs", "Breath First Search (BFS)", "Depth First Search (DFS)", "Sorting Algorithms", "N/NP Complexity", "Quicksort", "Dijkstra"]
+          },
+          {
+            "title": {
+              "fr": "Conception et Programmation Web",
+              "en": "Web Design and Programming"
+            },
+            "description": {
+              "fr": "Module consacré à la conception, développement et déploiement d’applications Web modernes et d’APIs REST, avec JavaScript côté client et serveur. Mise en pratique de la programmation asynchrone et événementielle, de l’API DOM, d’AJAX et des standards HTML5/CSS3/ES6+, avec application des bonnes pratiques de développement et de documentation des APIs.",
+              "en": "Module dedicated to the design, development and deployment of modern Web applications and REST APIs, with JavaScript on the client and server side. Practical implementation of asynchronous and event-based programming, the DOM API, AJAX and HTML5/CSS3/ES6+ standards, with application of best practices in development and documentation of APIs."
+            },
+            "tags": [ "Web Development", "JavaScript", "Node.js", "HTML5", "CSS3", "ES6+", "AJAX", "DOM API", "Asynchronous Programming", "Event-Based Programming", "REST API", "Client-Server Architecture"]
+          },
+          {
+            "title": {
+              "fr": "Bases de données avancées",
+              "en": "Advanced Databases"
+            },
+            "description": {
+              "fr": "Module consacré à la conception et exploitation de bases de données relationnelles à partir de cahiers des charges, avec étude de la modélisation logique, de la réduction des redondances et de l’intégrité des données. Mise en pratique de SQL avancé, des déclencheurs, de l’analyse des plans d’exécution et de l’optimisation des performances par l’utilisation d’index.",
+              "en": "Module dedicated to the design and exploitation of relational databases from specifications, with study of logical modeling, reduction of redundancies and data integrity. Practical implementation of advanced SQL, triggers, execution plan analysis and performance optimization using indexes."
+            },
+            "tags": [ "SQL", "Relational Databases", "Database Design", "Database Modeling", "Database Optimization"]
+          },
+          {
+            "title": {
+              "fr": "Réseaux",
+              "en": "Networks"
+            },
+            "description": {
+              "fr": "Module consacré à l'étude des fondamentaux des réseaux informatiques, des protocoles et des architectures en couches jusqu’à l’interconnexion des réseaux et l’architecture TCP/IP. Mise en pratique de la conception et configuration de réseaux IPv4, du sous-réseautage, du routage statique et dynamique, ainsi que de l’analyse de trames. Utilisation de simulateurs et d’émulateurs réseau (Filius, GNS3) et configuration de routeurs Cisco.",
+              "en": "Module dedicated to the study of the fundamentals of computer networks, protocols and layered architectures up to the interconnection of networks and the TCP/IP architecture. Practical implementation of the design and configuration of IPv4 networks, subnetting, static and dynamic routing, as well as frame analysis. Use of network simulators and emulators (Filius, GNS3) and configuration of Cisco routers."
+            },
+            "tags": [ "Network", "TCP/IP", "Routing", "Subnetting", "Frame Analysis", "Simulators", "Emulators", "Cisco Routers"]
           }
         ],
-        "tags": ["Sciences", "Ingénierie"]
+        "tags": ["C/C++", "Algorithmics", "Optimization", "Data Structures", "Web Development", "Databases", "Networks"]
       }
     ]
   },
@@ -271,25 +417,23 @@
         },
         "missions": {
           "fr": [
-            "Développement de solutions logicielles pour la robotique adaptative",
-            "Applications : dévracage hétérogène, accrochage automatique, décapage laser, polissage robotisé",
+            "Développement de solutions logicielles pour la robotique adaptative (Applications : dévracage hétérogène, accrochage automatique, décapage laser, polissage robotisé, peinture robotisée)",
             "Développement et intégration d’algorithmes de vision 3D et d’IA",
             "Définition et implémentation d’architectures logicielles pour la robotique",
-            "Architecture backend (ROS 2), frontend web (ReactJS, ThreeJS), communication via WebSocket",
+            "Architecture backend (ROS 2), frontend web (React.js, Three.js), communication via WebSocket",
             "Développement robotique ABB / STÄUBLI",
             "Capteurs 3D : ZIVID / SICK / VISIONERF / KEYENCE"
           ],
           "en": [
-            "Development of software solutions for adaptive robotics",
-            "Applications: heterogeneous bin picking, automatic hanging, laser stripping, robotic polishing",
+            "Development of software solutions for adaptive robotics (Applications: heterogeneous bin picking, automatic hanging, laser stripping, robotic polishing, robotic painting)",
             "Development and integration of 3D vision and AI algorithms",
             "Definition and implementation of software architectures for robotics",
-            "Backend architecture (ROS 2), web frontend (ReactJS, ThreeJS), WebSocket communication",
-            "ABB / STÄUBLI robot programming",
+            "Backend architecture (ROS 2), frontend web (React.js, Three.js), communication via WebSocket",
+            "Robot programming ABB / STÄUBLI",
             "3D sensors: ZIVID / SICK / VISIONERF / KEYENCE"
           ]
-        },
-        "tags": ["ROS 2", "Vision 3D", "IA", "ReactJS", "ThreeJS", "WebSocket", "ABB", "STÄUBLI", "C++"]
+        }, 
+        "tags": ["C++", "Dynamic Link Library (DLL)", "Point Cloud Library (PCL)", "Open3D", "HALCON", "Docker", "REST API", "ROS 2 | MoveIt", "Vision 3D", "IA", "React.js", "Three.js", "WebSocket", "ABB", "STÄUBLI"]
       },
       {
         "company": "Innodura TB",
@@ -317,7 +461,7 @@
             "Point-cloud processing via voxelization (PCL / Octomap / Voxels)"
           ]
         },
-        "tags": ["ROS", "MoveIt", "Path planning", "PCL", "Octomap", "Voxels"]
+        "tags": ["C++", "ROS", "MoveIt", "Path Planning", "Docker", "REST API", "Point Cloud Library (PCL)", "Octomap", "Voxels", "TCP/IP"]
       },
       {
         "company": "SENZU SAS",
@@ -330,8 +474,8 @@
           "en": "June 2019 — August 2019"
         },
         "location": {
-          "fr": "Région de Lyon, France",
-          "en": "Lyon area, France"
+          "fr": "Lyon, France",
+          "en": "Lyon, France"
         },
         "missions": {
           "fr": [
@@ -343,31 +487,7 @@
             "Implementation of an MVVM architecture with C# / WPF"
           ]
         },
-        "tags": ["C#", "WPF", "MVVM", "NFC"]
-      },
-      {
-        "company": "EARL Les Pends",
-        "role": {
-          "fr": "Ouvrier agricole saisonnier",
-          "en": "Seasonal farm worker"
-        },
-        "period": {
-          "fr": "Étés 2013 — 2016",
-          "en": "Summers 2013 — 2016"
-        },
-        "location": {
-          "fr": "Tain-l’Hermitage, France",
-          "en": "Tain-l’Hermitage, France"
-        },
-        "missions": {
-          "fr": [
-            "Récolte de fruits et travail des vignes (jobs d’été)"
-          ],
-          "en": [
-            "Fruit harvesting and vineyard work (summer jobs)"
-          ]
-        },
-        "tags": ["Autonomie", "Rigueur", "Travail d’équipe"]
+        "tags": ["C#", "Windows Presentation Foundation (WPF)", "Model-View-ViewModel (MVVM)", "NFC"]
       }
     ]
   },
@@ -390,7 +510,15 @@
           "fr": "QML for Beginners",
           "en": "QML for Beginners"
         },
-        "issuer": { "fr": "Formation en ligne", "en": "Online course" },
+        "issuer": { "fr": "Qt Academy", "en": "Qt Academy" },
+        "year": ""
+      },
+      {
+        "title": {
+          "fr": "Introduction à Qt Quick 3D",
+          "en": "Introduction to Qt Quick 3"
+        },
+        "issuer": { "fr": "Qt Academy", "en": "Qt Academy" },
         "year": ""
       },
       {
@@ -436,7 +564,7 @@
           "en": "3D mesh modeling with Bézier surfaces and revolution, mesh deformation, Qt UI."
         },
         "banner": "assets/images/3d-modeling/img_glass_shear.jpg",
-        "tags": ["C++", "Qt", "Informatique graphique", "Bézier"],
+        "tags": ["C++", "Qt", "Computer Graphics", "Mesh Deformation", "Bézier"],
         "link": "",
         "sections": [
           {
@@ -524,7 +652,7 @@
           "en": "Replica of the famous Pac-Man game with a level editor."
         },
         "banner": "assets/images/pac-man/pac-man-banner.png",
-        "tags": ["Java", "JavaFX", "MVC", "Jeu"],
+        "tags": ["Java", "JavaFX", "MVC", "Game Development"],
         "link": "https://github.com/VictorCombat/pac-man",
         "sections": [
           {
@@ -560,7 +688,7 @@
           "en": "Cryptocurrency price tracking mobile app (Flutter)."
         },
         "banner": "assets/images/cryptotrack/cryptotrack-banner.jpg",
-        "tags": ["Flutter", "Dart", "API", "Mobile"],
+        "tags": ["Flutter", "Dart", "REST API", "Mobile Development"],
         "link": "",
         "sections": [
           {
@@ -600,7 +728,7 @@
           "en": "Introduction to OpenCV: background subtraction & region growing."
         },
         "banner": "assets/images/bg-subtraction-region-growing/rg-auto-02.jpg",
-        "tags": ["OpenCV", "Python", "Vision", "Image"],
+        "tags": ["OpenCV", "Python", "Computer Vision", "Image Processing"],
         "link": "",
         "sections": [
           {
@@ -638,7 +766,7 @@
           "en": "Infinite-shooter arcade game made with Unity in one week."
         },
         "banner": "assets/images/orbital-defense/orbital-defense-banner.jpg",
-        "tags": ["Unity", "C#", "Game Dev"],
+        "tags": ["Unity", "C#", "Game Development"],
         "link": "",
         "sections": [
           {

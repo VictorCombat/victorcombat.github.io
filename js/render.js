@@ -11,7 +11,7 @@
     if (!root) return;
 
     root.innerHTML = `
-      <div class="hero__grid">
+      <div class="container hero__grid">
         <div class="hero__content reveal">
           <p class="section__eyebrow">${t(ui.nav.about, lang)}</p>
           <h1 class="hero__name">${profile.name}</h1>
@@ -19,11 +19,11 @@
           <p class="hero__location">${t(profile.location, lang)}</p>
           <p class="hero__bio">${t(profile.bio, lang)}</p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="${profile.cvFr}" download>
+            <a class="btn btn--primary" href="${profile.cvFr}" target="_blank" rel="noopener noreferrer">
               <img class="btn__icon" src="assets/icons/download.svg" alt="" />
               ${t(ui.cvFr, lang)}
             </a>
-            <a class="btn btn--ghost" href="${profile.cvEn}" download>
+            <a class="btn btn--ghost" href="${profile.cvEn}" target="_blank" rel="noopener noreferrer">
               <img class="btn__icon" src="assets/icons/download.svg" alt="" />
               ${t(ui.cvEn, lang)}
             </a>
@@ -56,15 +56,18 @@
     const root = document.querySelector("[data-skills]");
     if (!root) return;
 
-    const domainTags = tList(skills.domains.items, lang)
-      .map((item) => `<span class="tag">${item}</span>`)
-      .join("");
-    const hardTags = (skills.hard.items || [])
-      .map((item) => `<span class="tag">${item}</span>`)
-      .join("");
-    const softTags = tList(skills.soft.items, lang)
-      .map((item) => `<span class="tag">${item}</span>`)
-      .join("");
+    const toTags = (items) =>
+      items.map((item) => `<span class="tag">${item}</span>`).join("");
+
+    const domainTags = toTags(tList(skills.domains.items, lang));
+    const hardTags = toTags(skills.hard.items || []);
+    const softTags = toTags(tList(skills.soft.items, lang));
+
+    const labels = {
+      domains: { fr: "Expertise", en: "Expertise" },
+      hard: { fr: "Techniques", en: "Hard Skills" },
+      soft: { fr: "Relationnelles", en: "Soft Skills" },
+    };
 
     root.innerHTML = `
       <div class="section__header reveal">
@@ -72,18 +75,23 @@
         <h2 class="section__title">${t(ui.nav.skills, lang)}</h2>
         <p class="section__lead">${t(skills.lead, lang)}</p>
       </div>
-      <div class="skill-groups">
-        <article class="skill-card reveal">
-          <h3 class="skill-card__title">${t(skills.domains.title, lang)}</h3>
+      <div class="skills-stack">
+        <article class="timeline-item skills-item skills-item--domains reveal">
+          <p class="skills-item__meta">${t(labels.domains, lang)}</p>
+          <h3 class="timeline-item__title">${t(skills.domains.title, lang)}</h3>
           <div class="tags">${domainTags}</div>
         </article>
-        <article class="skill-card reveal">
-          <h3 class="skill-card__title">${t(skills.hard.title, lang)}</h3>
+
+        <article class="timeline-item skills-item skills-item--hard reveal">
+          <p class="skills-item__meta">${t(labels.hard, lang)}</p>
+          <h3 class="timeline-item__title">${t(skills.hard.title, lang)}</h3>
           <div class="tags">${hardTags}</div>
         </article>
-        <article class="skill-card reveal">
-          <h3 class="skill-card__title">${t(skills.soft.title, lang)}</h3>
-          <div class="tags">${softTags}</div>
+
+        <article class="timeline-item skills-item skills-item--soft reveal">
+          <p class="skills-item__meta">${t(labels.soft, lang)}</p>
+          <h3 class="timeline-item__title">${t(skills.soft.title, lang)}</h3>
+          <div class="tags tags--soft">${softTags}</div>
         </article>
       </div>
     `;
@@ -95,17 +103,38 @@
 
     const items = (education.items || [])
       .map((item) => {
-        const courses = (item.courses || [])
+        const courseList = item.courses || [];
+        const courses = courseList
           .map(
             (course) => `
-            <div class="course-item">
-              <p class="course-item__title">${t(course.title, lang)}</p>
-              <p class="course-item__desc">${t(course.description, lang)}</p>
-              ${tagsHtml(course.tags)}
-            </div>
+            <details class="course-item">
+              <summary class="course-item__summary">
+                <span class="course-item__title">${t(course.title, lang)}</span>
+                <span class="course-item__chevron" aria-hidden="true"></span>
+              </summary>
+              <div class="course-item__body">
+                <p class="course-item__desc">${t(course.description, lang)}</p>
+                ${tagsHtml(course.tags)}
+              </div>
+            </details>
           `
           )
           .join("");
+
+        const coursesBlock =
+          courseList.length > 0
+            ? `
+          <details class="courses-fold">
+            <summary class="courses-fold__summary">
+              <span>${t(ui.coursesToggle, lang).replace("{count}", String(courseList.length))}</span>
+              <span class="courses-fold__chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="course-list">${courses}</div>
+          </details>
+        `
+            : "";
+
+        const itemTags = item.tags?.length ? tagsHtml(item.tags) : "";
 
         return `
           <article class="timeline-item reveal">
@@ -115,10 +144,9 @@
             </div>
             <h3 class="timeline-item__title">${t(item.degree, lang)}</h3>
             <p class="timeline-item__subtitle">${t(item.school, lang)}</p>
-            <p class="timeline-item__desc">${t(item.description, lang)}</p>
-            <p class="section__eyebrow" style="margin-bottom:0.75rem">${t(ui.courses, lang)}</p>
-            <div class="course-list">${courses}</div>
-            ${tagsHtml(item.tags)}
+            <p class="timeline-item__desc timeline-item__desc--compact">${t(item.description, lang)}</p>
+            ${coursesBlock}
+            ${itemTags}
           </article>
         `;
       })
