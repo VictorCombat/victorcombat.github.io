@@ -73,6 +73,7 @@
       "items": [
         "C++",
         "C#",
+        "Rust",
         "Python",
         "Git",
         "HALCON",
@@ -516,9 +517,17 @@
       {
         "title": {
           "fr": "Introduction à Qt Quick 3D",
-          "en": "Introduction to Qt Quick 3"
+          "en": "Introduction to Qt Quick 3D"
         },
         "issuer": { "fr": "Qt Academy", "en": "Qt Academy" },
+        "year": ""
+      },
+      {
+        "title": {
+          "fr": "Découvrir Rust",
+          "en": "Discover Rust"
+        },
+        "issuer": { "fr": "LinkedIn Learning", "en": "LinkedIn Learning" },
         "year": ""
       },
       {
